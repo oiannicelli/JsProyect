@@ -1,0 +1,44 @@
+[
+	{
+		"id": 1,
+		"marca": "KARMA por Annie",
+		"imagen": "assets/images/bumeran.jpg",
+		"precio": "3.000",
+		"detalles": ["5cm x 6 cm aprox.", "Blanco y negro", "1 sesión", "1 hora aprox."]
+	},
+	{
+		"id": 2,
+		"marca": "GOLONDRINAS por Facu",
+		"imagen": "assets/images/golondrina.jpg",
+		"precio": "18.000",
+		"detalles": ["25cm x 25cm aprox.", "Full color", "2 sesiones", "2 horas aprox. c/u"]
+	},
+	{
+		"id": 3,
+		"marca": "SNAKE por Sofi",
+		"imagen": "assets/images/serpiente.jpg",
+		"precio": "8.000",
+		"detalles": ["10cm x 15cm aprox.", "Blanco y negro", "1 sesión", "1 hora y media aprox."]
+	},
+	{
+		"id": 4,
+		"marca": "FAT CAT por Sofi",
+		"imagen": "assets/images/gato.png",
+		"precio": "10.000",
+		"detalles": ["15cm x 20cm aprox.", "Full color", "1 sesión", "2 horas aprox."]
+	},
+	{
+		"id": 5,
+		"marca": "BUTTERFLY por Annie",
+		"imagen": "assets/images/mariposa.jpg",
+		"precio": "12.000",
+		"detalles": ["10cm x 10cm aprox.", "Blanco y negro", "1 sesión", "2 horas aprox."]
+	},
+	{
+		"id": 6,
+		"marca": "PANTERA por Facu",
+		"imagen": "assets/images/pantera.jpg",
+		"precio": "15.000",
+		"detalles": ["15cm x 20cm aprox.", "Full color", "1 sesión", "2 horas aprox."]
+	}
+]

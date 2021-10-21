@@ -1,0 +1,207 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Proyecto Ornella Iannicelli</title>
+        <meta name="description" content="">
+        <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+        <!-- Style -->
+        <link rel="stylesheet" href="css/sweetalert2.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+        <!--For Plugins external css-->
+        <link rel="stylesheet" href="./assets/css/plugins.css" />
+        <link rel="stylesheet" href="./assets/css/fonticons.css">
+        <link rel="stylesheet" href="./assets/css/slider-pro.css">
+        <link rel="stylesheet" href="./assets/css/stylesheet.css">
+        <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+        <!--Theme custom css -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+
+        <!--Theme Responsive css-->
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+        <!-- JS -->
+        <script src="js/popper.min.js"></script>
+
+        <!--favicon.ico-->
+	    <link rel="shortcut icon" type="image/x-icon" href="./assets/fonts/favicon.ico">
+
+    </head>
+    
+    <body data-spy="scroll" data-target=".navbar-collapse">
+        <header id="main_menu" class="header navbar-fixed-top">            
+            <div class="main_menu_bg container">
+                <nav class="navbar" id="navmenu">
+                    <!-- Marca -->
+                    <div class="col-4">
+                        <a class="navbar-brand" href="./index.html">
+                            <img width="200px" src="./assets/images/logo.png"/>
+                        </a>
+                    </div>
+                    
+                    <!-- Enlaces de navegación -->
+                    <div class="navbar col-8" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar navbar-right">
+                            <li><a href="artistas.html">artistas</a></li>
+                            <li><a href="cuidados.html">cuidados</a></li>
+                            <li><a href="tienda.html">tienda</a></li>
+                           <li><a href="agenda.html">agenda</a></li>
+                           <i class="fas fa-shopping-cart" class=" dropdown-toggle nav-item" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                            <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                <table id="lista-carrito" class="table">
+                                   <thead>
+                                        <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                                <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                                <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Realizar Reserva</a>
+                           </div>
+                        </ul>                 
+                    </div>   
+                </nav>
+            </div>	
+        </header>
+
+        <!-- Service Section -->
+        <section class="service sections margin-top-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="head_title text-center">
+                            <h1>preguntas frecuentes</h1>
+                        </div><!-- End of head title -->
+
+                        <div class="main_service_area"> 
+                            <div class="single_service_area">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="signle_service_left">
+                                            <img src="assets/images/service4.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5 col-sm-push-1">
+                                        <div class="single_service">
+                                            <h3>cuidado de la piel</h3>
+                                            <h2>después del tatuaje</h2>
+                                            <div class="separator2"></div>
+                                            <p>Mantén el sticker durante 4 días y luego quítalo debajo de la ducha con mucho cuidado.</p>
+                                            <p>Lava tu tatuaje suavemente y sécalo con toallas de papel de cocina (¡no lo frotes!).</p>
+                                            <p>Después de lavar y secar tu tatuaje, usa una crema curativa para hidratarlo. Haz una capa fina 4 veces al día durante la primera semana, luego 3 veces la segunda semana, 2 la tercera, y una vez al día durante la cuarta semana.</p>                                                
+                                            <p>Durante los primeros 15 días, evita: deportes, duchas largas, baños, saunas o natación.</p>
+                                            <p>Usa ropa suelta.</p>
+                                            <strong>La picazón es parte del proceso, no te rasques!</strong>
+                                            <br><br>
+                                            <p>Evita la luz solar directa durante 4 semanas. Puedes comenzar a usar protector solar después de 15 días.</p>    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- End of single service area -->
+
+                            <div class="single_service_area  margin-top-80">
+                                <div class="row">
+
+                                    <div class="col-sm-6 col-sm-push-6">
+                                        <div class="signle_service_left">
+                                            <img src="assets/images/service5.jpg" alt="" />
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-5 col-sm-pull-6">
+                                        <div class="single_service">
+                                            <h3>art</h3>
+                                            <h2>installation</h2>
+                                            <div class="separator2"></div>
+                                            <p>¿Tengo que tener 18 años o más para hacerme un tatuaje?</p>
+                                            <p>¡Si! No tatuamos a personas menores de 18 años, incluso con supervisión o permiso de su representante.</p>
+                                            <p>	Después de que ya tengo mi turno, ¿qué hago?</p>
+                                            <p>Si está de acuerdo con el precio y la fecha, ¡genial! Ahora, debes hacer un depósito para confirmar la cita. El depósito se puede hacer en efectivo en nuestro estudio o a través de MercadoPago. Ten en cuenta que con este segundo método hay una pequeña tarifa adicional que cobra la aplicación.</p>
+                                            <p>¿Qué debo hacer antes de la cita?</p>
+                                            <p>¡Cuida bien tu piel! No tatuamos en bronceados o pieles quemadas por el sol, ya que es muy sensible y el tatuaje podría no sanar bien. Además, recuerda beber agua, hidratar tu piel y no tome alcohol al menos 24 horas antes de su cita. Todo esto es para asegurarnos de que tu piel esté en la mejor condición cuando te hagas tu tatuaje!</p>
+                                            <p>¿Puedo ver el diseño antes de la cita?</p>
+                                            <p>	El tatuaje sigue siendo una forma de arte, y nos enorgullecemos del talento de nuestros artistas. Por eso es muy importante para nosotros proteger los derechos de autor de todas nuestras obras. Puedes ver el diseño el día de tu cita, y puedes hablar con tu artista si te gustaría cambiar algo. ¡Queremos que seas feliz con tu tatuaje! No se pueden hacer cambios importantes en el diseño o agregar elementos nuevos diferentes a los que figuran en la solicitud original el mismo día de la cita. Para cambios grandes, tienes que avisarnos con tiempo via mail.</p>
+                                            <p>	¿Puedo hacerme un tatuaje en una cicatriz?</p>
+                                            <p>	Depende del tipo de cicatriz y el tiempo que tenga. En la mayoría de los casos no hay problema, pero siempre es mejor consultar con tu médico para estar seguros.</p>
+                                            <p>	¿Y qué pasa con las alergias?</p>
+                                            <p>	Las alergias pueden ocurrir por diferentes razones. Podrías no tener problemas con tu primer tatuaje, y tener una reacción alérgica con el segundo, o estar bien con la tinta negra pero ser alérgico la roja rojo.Si tienes o eres propenso a las alergias, ¡avísanos de antemano! Podemos decirte qué tinta usa tu artista para que puedas investigar un poco y hablar con tu médico. ¡Tu seguridad es muy importante para nosotros!</p>                                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- End of single service area -->
+
+                            <div class="single_service_area margin-top-80">
+                                <div class="row">
+                                    <div class="col-sm-push-2 col-sm-1">
+                                        <div class="signle_service_left">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-7 col-sm-push-2">
+                                        <div class="single_service">
+                                            <h3>¿Qué pasa si tengo que cancelar?</h3>
+                                            <div class="separator2"></div>
+                                            <p>Si por cualquier motivo debes cancelar tu cita, es necesario que nos informes al menos una semana antes de la fecha confirmada. En este caso, reembolsaremos el 100% del depósito. Si cancelas con menos de una semana de aviso, el depósito no será reembolsado.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            <div class="single_service_area margin-top-80">
+                                <div class="row">
+                                    <div class="col-sm-push-2 col-sm-1">
+                                        <div class="signle_service_left">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-7 col-sm-push-2">
+                                        <div class="single_service">
+                                            <h3>¿Puedo llevar a mis amigos o familia conmigo?</h3>
+                                            <div class="separator2"></div>
+                                            <p>Nos encanta conocer gente, y entendemos si te quieres tener el apoyo moral y la compañía de tus familiares y amigos. ¡Pero como somos un estudio muy pequeño, te pedimos que por favor traigas a una sola persona!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- End of single service area -->
+                        </div>
+                    </div><!-- End of col-sm-12 -->
+                </div><!-- End of row -->
+            </div><!-- End of Container -->
+        </section><!-- End of Service Section -->
+
+        <!-- footer Section -->
+        <footer id="footer" class="footer">
+            <div class="container">
+                <div class="main_footer">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="copyright_text text-center">
+                                <p class=" wow fadeInRight" data-wow-duration="1s"><a target="_blank" href="https://www.behance.net/oiannicelli">The Artisti's Book</a>© All Rights Reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End of container -->
+        </footer><!-- End of footer -->
+
+        <script src="./js/jquery-3.4.1.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/sweetalert2.min.js"></script>
+        <script src="./js/carrito.js"></script>
+        <script src="./js/pedido.js"></script>
+    </body>
+</html>

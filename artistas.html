@@ -1,0 +1,209 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Proyecto Ornella Iannicelli</title>
+        <meta name="description" content="">
+        <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+        <!-- Style -->
+        <link rel="stylesheet" href="css/sweetalert2.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+        <!--For Plugins external css-->
+        <link rel="stylesheet" href="./assets/css/plugins.css" />
+        <link rel="stylesheet" href="./assets/css/fonticons.css">
+        <link rel="stylesheet" href="./assets/css/slider-pro.css">
+        <link rel="stylesheet" href="./assets/css/stylesheet.css">
+        <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+        <!--Theme custom css -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+
+        <!--Theme Responsive css-->
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+        <!-- JS -->
+        <script src="js/popper.min.js"></script>
+
+        <!--favicon.ico-->
+	    <link rel="shortcut icon" type="image/x-icon" href="./assets/fonts/favicon.ico">
+
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar-collapse">
+        
+        <header id="main_menu" class="header navbar-fixed-top">            
+            <div class="main_menu_bg container">
+                <nav class="navbar" id="navmenu">
+                    <!-- Marca -->
+                    <div class="col-4">
+                        <a class="navbar-brand" href="./index.html">
+                            <img width="200px" src="./assets/images/logo.png"/>
+                        </a>
+                    </div>
+                    
+                    <!-- Enlaces de navegación -->
+                    <div class="navbar col-8" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar navbar-right">
+                            <li><a href="artistas.html">artistas</a></li>
+                            <li><a href="cuidados.html">cuidados</a></li>
+                            <li><a href="tienda.html">tienda</a></li>
+                           <li><a href="agenda.html">agenda</a></li>
+                           <i class="fas fa-shopping-cart" class=" dropdown-toggle nav-item" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                            <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                <table id="lista-carrito" class="table">
+                                   <thead>
+                                        <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                                <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                                <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Realizar Reserva</a>
+                           </div>
+                        </ul>                 
+                    </div>   
+                </nav>
+            </div>	
+        </header>
+
+        <!-- El estudio Section -->
+        <section id="aboutus" class="aboutus">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="head_title text-center margin-top-80">
+                            <h1>el estudio</h1>
+                        </div><!-- End of head title -->
+
+                        <div class="main_about_area"> 
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="signle_about_left">
+                                        <img src="./assets/images/studio.jpg" alt="" />
+                                        <div class="single_about_left_text">
+                                            <div class="separator2"></div>
+                                            <h4>espacio abierto<br />
+                                                especializado<br />
+                                                en tatuajes!</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-5 col-sm-push-1">
+                                    <div class="single_about">
+                                        <div class="separator2"></div>
+                                        <p>Ubicado en el corazón de la ciudad antigua de Buenos Aires, Cucu Studio es un espacio abierto especializado en tatuajes. Artistas del tatuaje locales e internacionales se unen para crear el estudio más interesante y de mente abierta.</p>
+                                        <p>Fundada y diseñada por Zina Samoletova. Una tatuadora rusa que decidió mudarse a Argentina en constante búsqueda de nuevas experiencias. Después de trabajar en Francia, Alemania, Holanda y algunos otros países, decidió abrir su primer estudio de tatuajes en Buenos Aires.</p>
+                                        <p>Recibimos clientes de todo el mundo y les ofrecemos el intercambio de culturas más extraordinario. Lleno de plantas, grandes ventanales y luz solar. Un espacio armónico donde siempre te sentirás cómodo y bienvenido mientras te llevas arte original en tu propia piel.</p>
+                                        <a href="./agenda.html" class="btn btn-default">pedí tu presupuesto</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div><!-- End of col-sm-12 -->
+
+                </div><!-- End of row -->
+            </div><!-- End of Container -->
+            <hr />
+        </section><!-- End of about Section -->
+
+        <!-- Artistas Section -->
+        <section id="team" class="team colorsbg sections">
+        <div class="container">
+            <div class="row">
+                <div class="main_team_area col-sm-12"">
+                    <div class="head_title text-center">
+                        <h1>nuestros artistas</h1>
+                    </div><!-- End of head title -->
+
+                    <div class="main_team text-center">
+                            <div class="col-sm-10 col-sm-offset-1">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="team">
+                                            <img src="./assets/images/retrato1.JPG" alt="" />
+                                            <h4>Annie</h4>
+                                            <div class="separator"></div>
+                                            <p>Le gusta experimentar con distintos estilos y trabaja desde líneas gruesas hasta single needle, pasando por texturas de sombras, dotwork, planos de color y blackwork.</p>
+                                        </div>
+                                    </div> <!-- End of col-sm-4 --> 
+                                    <div class="col-sm-4">
+                                        <div class="team">
+                                            <img src="./assets/images/retrato2.JPG" alt="" />
+                                            <h4>Sofia</h4>
+                                            <div class="separator"></div>
+                                            <p>En sus diseños, a Sofi le gusta jugar con dotwork, valor de línea, forma, color, elementos abstractos y figurativos.</p>
+                                        </div>
+                                    </div> <!-- End of col-sm-4 --> 
+                                    <div class="col-sm-4">
+                                        <div class="team">
+                                            <img src="./assets/images/retrato3.JPG" alt="" />
+                                            <h4>Facundo</h4>
+                                            <div class="separator"></div>
+                                            <p>Lola trabaja con handpoke, y todos sus materiales son veganos.Su filosofía sobre los tatuajes es que son una composición única y abstracta.</p>
+                                        </div>
+                                    </div><!-- End of col-sm-4 -->  
+                                </div>
+                            </div><!-- End of col-sm-10 -->
+                    </div>
+                </div>
+            </div><!-- End of row -->
+        </div><!-- End of Contaier -->
+        </section><!-- End of portfolio Section --> 
+
+        <!-- footer Section -->
+        <footer id="footer" class="footer">
+            <div class="container">
+                <div class="main_footer">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="copyright_text text-center">
+                                <p class=" wow fadeInRight" data-wow-duration="1s"><a target="_blank" href="https://www.behance.net/oiannicelli">Planearte</a>© Todos los derechos reservados</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End of container -->
+        </footer><!-- End of footer -->
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/sweetalert2.min.js"></script>
+        <script src="js/carrito.js"></script>
+        <script src="js/pedido.js"></script>
+
+        <!-- Instagram Section NO LO USE!
+        <section id="instagrams" class="instagrams sections">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="main_instagrams_area text-center">
+                            <div class="head_title">
+                                <h1>instagram</h1>
+                            </div><!-- End of head title 
+
+                            <div class="instagram-thumbnails">
+                                <img class="instagram-thumbnail img-responsive" src="./assets/images/insta1.png"/>
+                                <img class="instagram-thumbnail img-responsive" src="./assets/images/insta1.png"/>
+                                <img class="instagram-thumbnail img-responsive" src="./assets/images/insta1.png"/>
+                                <img class="instagram-thumbnail img-responsive" src="./assets/images/insta1.png"/>
+                                <img class="instagram-thumbnail img-responsive" src="./assets/images/insta1.png"/>
+                            </div>
+                        </div>
+                    </div><!-- End of col-sm-12
+                </div><!-- End of row 
+            </div><!-- End of Container 
+        </section><!-- End of counter Section -->
+    </body>
+</html>
