@@ -29,8 +29,8 @@
             <link rel="stylesheet" href="./assets/css/responsive.css" />
         
             <!-- JS -->
-            <script src="js/popper.min.js"></script>
-            <script type="text/javascript" src="localstorage.js"></script>
+            <script src="./js/popper.min.js"></script>
+            <script type="text/javascript" src="./js/localstorage.js"></script>
         
             <!--favicon.ico-->
 	    <link rel="shortcut icon" type="image/x-icon" href="./assets/fonts/favicon.ico">
@@ -79,40 +79,44 @@
         </header>
 
         <!-- Agenda -->
-        <div class="grid space-top">
+        <div class="container space-top">
             <div class="head_title text-center">
                 <h1>presupuestos</h1>
             </div>
-            <div class="col-12">
-                <form id="frmCadastre" class="hform">
-                    <input type="hidden" id="txtOperacion"/>
+            <div class="row">
+                <div class="col-12">
+                    <form id="frmCadastre" class="hform">
+                        <input type="hidden" id="txtOperacion"/>
                         
-                        <label for="txtID">Nombre y Apellido:</label>
-                        <input type="text" id="txtID"/>
+                            <label for="txtID">Nombre y Apellido:</label>
+                            <input type="text" id="txtNombre"/>
     
-                        <label for="txtName">E-mail:</label>
-                        <input type="text" id="txtName"/>
+                            <label for="txtName">E-mail:</label>
+                            <input type="text" id="txtEmail"/>
 
-                        <label for="txtName">Idea del tatuaje: qué tienes en mente</label>
-                        <textarea type="text" id="txtIdea"></textarea>
+                            <label for="txtName">Idea del tatuaje: qué tienes en mente</label>
+                            <textarea type="text" id="txtIdea"></textarea>
     
-                        <label for="txtPhone">Lugar del cuerpo:</label>
-                        <input type="text" id="txtPhone"/>
+                            <label for="txtPhone">Lugar del cuerpo:</label>
+                            <input type="text" id="txtLugar"/>
     
-                        <label for="txtEmail">Tamaño (en cm):</label>
-                        <input type="text" id="txtEmail"/>
+                            <label for="txtEmail">Tamaño (en cm):</label>
+                            <input type="text" id="txtTamaño"/>
 
-                        <label for="txtPhone">Color:</label>
-                        <input type="text" id="txtPhone"/>
+                            <label for="txtPhone">Color:</label>
+                          <input type="text" id="txtColor"/>
     
-                        <label for="txtEmail">Artista preferido:</label>
-                        <input type="text" id="txtEmail"/>
+                            <label for="txtEmail">Artista preferido:</label>
+                            <input type="text" id="txtArtista"/>
     
-                    <div class="text-right">
-                        <button type="button"  id="btnSave" onClick="GuardarCar();"> Enviar </button>
-                        <button type="button"  id="btn" onClick="ListCar();"> Mostrar listado </button>
-                    </div>
-                </form>
+                    
+                        <div class="text-right">
+                            <button type="button"  id="btnSave" onClick="GuardarCar();"> Enviar </button>
+                            <button type="button"  id="btn" onClick="ListCar();"> Mostrar listado </button>
+                        </div>
+               
+                    </form>
+                </div>
             </div>
     
             <table id="tblList" class="table">

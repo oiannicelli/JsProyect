@@ -135,7 +135,7 @@ dl dd{margin-left: 15px;}
 
 /* ---- Forms ---- */
 .vform {width: 100%; max-width: 320px;}
-.hform {width: 100%; max-width: 420px;}
+
 .vform, .hform {margin-bottom: 20px; font:14px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #333;}
 
 .vform label {width: 100%; margin-bottom: 5px; }
