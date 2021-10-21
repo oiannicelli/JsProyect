@@ -15,10 +15,13 @@ function ListCar(){
 	datos += "<thead>";
 	datos +=	"<tr>";
 	datos +=	"	<th></th>";
-	datos +=	"	<th>ID</th>";
-	datos +=	"	<th>Name</th>";
-	datos +=	"	<th>Phone</th>";
-	datos +=	"	<th>Email</th>";
+	datos +=	"	<th>Nombre y Apellido</th>";
+	datos +=	"	<th>E-mail</th>";
+	datos +=	"	<th>Idea del tatuaje</th>";
+	datos +=	"	<th>Lugar del cuerpo</th>";
+	datos +=	"	<th>Tamaño</th>";
+	datos +=	"	<th>Color</th>";
+	datos +=	"	<th>Artista preferido</th>";
 	datos +=	"</tr>";
 	datos +="</thead>";
 	datos +="<tbody>";
@@ -29,6 +32,9 @@ function ListCar(){
 		datos += '	<td><img src="edit.png" alt="Edit" "class="btnEdit"  onClick="mEditarCar(\''+i+'\');"/>';
 		datos += ' <img src="delete.png" alt="Delete" "class="btnDelete"  onClick="DeleteCar(\''+i+'\');"/> </td>' ;
 		datos += "	<td>"+cli.ID+"</td>" ;
+		datos += "	<td>"+cli.Name+"</td>" ;
+		datos += "	<td>"+cli.Phone+"</td>" ;
+		datos += "	<td>"+cli.Email+"</td>" ;
 		datos += "	<td>"+cli.Name+"</td>" ;
 		datos += "	<td>"+cli.Phone+"</td>" ;
 		datos += "	<td>"+cli.Email+"</td>" ;

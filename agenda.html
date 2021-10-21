@@ -9,6 +9,7 @@
             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         
             <!-- Style -->
+            <link rel="stylesheet" type="text/css" href="./assets/css/styleAgenda.css">
             <link rel="stylesheet" href="./assets/css/sweetalert2.min.css">
             <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -78,7 +79,45 @@
         </header>
 
         <!-- Agenda -->
+        <div class="grid space-top">
+            <div class="head_title text-center">
+                <h1>presupuestos</h1>
+            </div>
+            <div class="col-12">
+                <form id="frmCadastre" class="hform">
+                    <input type="hidden" id="txtOperacion"/>
+                        
+                        <label for="txtID">Nombre y Apellido:</label>
+                        <input type="text" id="txtID"/>
+    
+                        <label for="txtName">E-mail:</label>
+                        <input type="text" id="txtName"/>
 
+                        <label for="txtName">Idea del tatuaje: qué tienes en mente</label>
+                        <textarea type="text" id="txtIdea"></textarea>
+    
+                        <label for="txtPhone">Lugar del cuerpo:</label>
+                        <input type="text" id="txtPhone"/>
+    
+                        <label for="txtEmail">Tamaño (en cm):</label>
+                        <input type="text" id="txtEmail"/>
+
+                        <label for="txtPhone">Color:</label>
+                        <input type="text" id="txtPhone"/>
+    
+                        <label for="txtEmail">Artista preferido:</label>
+                        <input type="text" id="txtEmail"/>
+    
+                    <div class="text-right">
+                        <button type="button"  id="btnSave" onClick="GuardarCar();"> Enviar </button>
+                        <button type="button"  id="btn" onClick="ListCar();"> Mostrar listado </button>
+                    </div>
+                </form>
+            </div>
+    
+            <table id="tblList" class="table">
+            </table>
+        </div>
         <!-- fin de agenda -->
 
         <!-- Seccion de Contacto -->
