@@ -68,13 +68,12 @@ function AddCar(){
 	});
 	dataCars.push(car);
 	localStorage.setItem("dataCars", JSON.stringify(dataCars));
-	alert("La información se guardo correctamente!");
 	ListCar();
 	return true;
 }
 
 function EditCar(selected_index){
-	alert(selected_index);
+	alert("La información se guardo correctamente!"+selected_index);
 	dataCars[selected_index] = JSON.stringify({
 		Nombre : document.getElementById("txtNombre").value ,
 		Email : document.getElementById("txtEmail").value ,
