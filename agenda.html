@@ -85,37 +85,48 @@
             </div>
             <div class="row">
                 <div class="col-12">
+                    <div class="main_contact sections">
+                        
                     <form id="frmCadastre" class="hform">
                         <input type="hidden" id="txtOperacion"/>
-                        
-                            <label for="txtID">Nombre y Apellido:</label>
-                            <input type="text" id="txtNombre"/>
-    
-                            <label for="txtName">E-mail:</label>
-                            <input type="text" id="txtEmail"/>
 
-                            <label for="txtName">Idea del tatuaje: qué tienes en mente</label>
-                            <textarea type="text" id="txtIdea"></textarea>
-    
-                            <label for="txtPhone">Lugar del cuerpo:</label>
-                            <input type="text" id="txtLugar"/>
-    
-                            <label for="txtEmail">Tamaño (en cm):</label>
-                            <input type="text" id="txtTamaño"/>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <label for="txtNombre"><h3>Nombre:</h3></label>
+                                <input type="text" id="txtNombre" aria-label="First name">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="txtEmail"><h3>E-mail:</h3></label>
+                              <input type="text" id="txtEmail" aria-label="Last name">
+                            </div>
+                          </div>
 
-                            <label for="txtPhone">Color:</label>
-                          <input type="text" id="txtColor"/>
+                        <label for="txtIdea"><h3>Idea del tatuaje:</h3></label>
+                        <textarea type="text" id="txtIdea" placeholder="que tienes en mente"></textarea>
+
+                        <label for="txtLugar"><h3>Lugar del cuerpo:</h3></label>
+                        <input type="text" id="txtLugar"/>
     
-                            <label for="txtEmail">Artista preferido:</label>
-                            <input type="text" id="txtArtista"/>
+                        <label for="txtTamaño"><h3>Tamaño (en cm):</h3></label>
+                        <input type="text" id="txtTamaño"/>
+
+                        <label for="txtColor"><h3>Color:</h3></label>
+                        <input type="text" id="txtColor"/>
     
+                        <label for="txtArtista"><h3>Artista preferido:</h3></label>
+                        <select class="form-select" id="txtArtista">
+                            <option selected>Elegí con quien te gustaria realizarlo</option>
+                            <option value="Annie">Annie</option>
+                            <option value="Facundo">Facundo</option>
+                            <option value="Sofia">Sofia</option>
+                          </select>
                     
                         <div class="text-right">
-                            <button type="button"  id="btnSave" onClick="GuardarCar();"> Enviar </button>
-                            
+                            <button type="button" class="btn" id="btnSave" onClick="GuardarCar();">Enviar</button>
                         </div>
                
                     </form>
+                </div>
                 </div>
             </div>
     
@@ -125,7 +136,7 @@
         <!-- fin de agenda -->
 
         <!-- Seccion de Contacto -->
-        <section id="contact" class="contactus margin-top-120">
+        <section id="contact" class="contactus">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
@@ -135,12 +146,10 @@
                             </div>
 
                             <div class="row">
-                                <div class="contact_contant">
                                     <div class="col-sm-6 col-xs-12">
                                         <div class="single_message_right_info">
                                             <ul>
-                                                <li><i class="fa fa-map-marker"></i> <span>Cochabamba 1320, Ciudad Autónoma de Buenos Aires - <br>
-                                                    Prov. Bs. As., Argentina</span></li>
+                                                <li><i class="fa fa-map-marker"></i> <span>Cochabamba 1320, Ciudad Autónoma de <br> Buenos Aires - Prov. Bs. As., Argentina</span></li>
 
                                                 <li><i class="fa fa-mobile-phone"></i> <span>+54 9 11-5623-5590</span></li>
 
@@ -181,7 +190,7 @@
                                             </form>
                                         </div>
                                     </div>
-                                </div> <!-- End of messsage contant-->
+
                             </div>
                         </div>
                     </div>
