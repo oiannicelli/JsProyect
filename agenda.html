@@ -27,7 +27,11 @@
         
             <!--Theme Responsive css-->
             <link rel="stylesheet" href="./assets/css/responsive.css" />
-
+        
+            <!-- JS -->
+            <script src="./js/popper.min.js"></script>
+            <script type="text/javascript" src="./js/localstorage.js"></script>
+        
             <!--favicon.ico-->
 	    <link rel="shortcut icon" type="image/x-icon" href="./assets/fonts/favicon.ico">
         
@@ -74,64 +78,7 @@
         </div>	
         </header>
 
-        <div class="container" style="margin-top:50px;">
-            <div class="row">
-                <div class="col-sm-12">
-                        <h1 class="text-center">presupuestos</h1>
-                            <hr>
-                            
-                            <form id="formulario-contacto" action="/php/enviar.php" method="POST" role="form">
-
-                                <div class="form-group">
-                                    <label for="txtNombre"><h3>Nombre:</h3></label>
-                                    <input required type="text" class="form-control" id="txtNombre" name="txtNombre">
-                                </div>
-                                <div class="form-group">
-                                    <label for="txtEmail"><h3>E-mail:</h3></label>
-                                    <input required type="email" class="form-control" id="txtEmail" name="txtEmail">
-                                </div>
-                                <div class="form-group">
-                                    <label for="txtIdea"><h3>Idea del tatuaje:</h3></label>
-                                    <textarea txtIdea="required" class="form-control" id="txtIdea" name="txtIdea"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <label for="txtLugar"><h3>Lugar del cuerpo:</h3></label>
-                                    <input required type="text" class="form-control" id="txtLugar" name="txtLugar">
-                                </div>
-                                <div class="form-group">
-                                    <label for="txtTamaño"><h3>Tamaño (en cm):</h3></label>
-                                    <input required type="text" class="form-control" id="txtTamaño" name="txtTamaño">
-                                </div>
-                                <div class="form-group">
-                                    <label for="txtColor"><h3>Color:</h3></label>
-                                    <input required type="text" class="form-control" id="txtColor" name="txtColor">
-                                </div>
-                                <div class="form-group">
-                                    <label for="txtArtista"><h3>Artista preferido:</h3></label>
-                                    <select required class="form-select" id="txtArtista" name="txtArtista">
-                                        <option selected>Elegí con quien te gustaria realizarlo</option>
-                                        <option value="Annie">Annie</option>
-                                        <option value="Facundo">Facundo</option>
-                                        <option value="Sofia">Sofia</option>
-                                      </select>
-                                </div>
-
-                                <div class="form-group">
-                                    <button type="button" class="btn btn-primary">Enviar</button>
-                                </div>
-
-                                <div id="alerta" class="alert hide">
-                                    <button type="submit" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                                    <strong class="respuesta"></strong> <span class="mensaje-alerta"></span>
-                                </div>
-                            </form>
-    
-                </div>
-            </div>
-        </div>
-        
-
-        <!-- Agenda 
+        <!-- Agenda -->
         <div class="container space-top">
             <div class="head_title text-center">
                 <h1>presupuestos</h1>
@@ -185,10 +132,10 @@
     
             <table id="tblList" class="table">
             </table>
-        </div>-->
+        </div>
         <!-- fin de agenda -->
 
-        <!-- Seccion de Contacto 
+        <!-- Seccion de Contacto -->
         <section id="contact" class="contactus">
             <div class="container">
                 <div class="row">
@@ -214,12 +161,12 @@
                                                 <a href=""><i class="fa fa-instagram img-circle"></i></a>
                                             </div>
                                         </div>
-                                    </div>
-
+                                    </div><!-- End of col-sm-6 -->
 
                                     <div class="col-sm-6 col-xs-12">
                                         <div class="single_contant_left margin-top-60">
                                             <form action="#" id="formid">
+                                                <!--<div class="col-lg-8 col-md-8 col-sm-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">-->
 
                                                 <div class="form-group">
                                                     <label>nombre</label>
@@ -239,6 +186,7 @@
                                                 <div class="">
                                                     <input type="submit" value="submit" class="btn">
                                                 </div>
+                                                <!--</div>--> 
                                             </form>
                                         </div>
                                     </div>
@@ -246,8 +194,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </div><!-- End of row -->
+            </div><!-- End of container -->
         </section><!-- fin de Seccion de Contacto -->
 
         <!-- Footer  -->
@@ -265,12 +213,10 @@
         </div><!-- End of container -->
         </footer><!-- fin de footer -->
 
-        <script src="https://code.jquery.com/jquery-2.2.2.min.js">script>
         <script src="js/jquery-3.4.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/sweetalert2.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="js/enviar.js"><script>
-
+        <script src="js/carrito.js"></script>
+        <script src="js/pedido.js"></script>
     </body>
 </html>
