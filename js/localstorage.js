@@ -29,8 +29,8 @@ function ListCar(){
 	for(let i in dataCars){
 		let cli = JSON.parse(dataCars[i]);
 	  	datos +="<tr>";
-		datos += '	<td><img src="./assets/images/edit.png" alt="Edit" "class="btnEdit"  onClick="mEditarCar(\''+i+'\');"/>';
-		datos += '<img src="./assets/images/delete.png" alt="Delete" "class="btnDelete"  onClick="DeleteCar(\''+i+'\');"/></td>' ;
+		datos += '	<td><img src="./assets/images/edit.png" alt="Edit" "class="btnEdit" onClick="mEditarCar(\''+i+'\');"/>';
+		datos += '	<img src="./assets/images/delete.png" alt="Delete" "class="btnDelete"  onClick="DeleteCar(\''+i+'\');"/></td>' ;
 		datos += "	<td>"+cli.Nombre+"</td>" ;
 		datos += "	<td>"+cli.Email+"</td>" ;
 		datos += "	<td>"+cli.Idea+"</td>" ;

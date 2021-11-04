@@ -30,6 +30,7 @@
         
             <!-- JS -->
             <script src="./js/popper.min.js"></script>
+            <script type="text/javascript" src="./js/localstorage.js"></script>
         
             <!--favicon.ico-->
 	    <link rel="shortcut icon" type="image/x-icon" href="./assets/fonts/favicon.ico">
@@ -79,73 +80,69 @@
         	
         </header>
 
-        <!-- Agenda -->
-        <div class="container space-top">
-            <div class="head_title text-center">
-                <h1>presupuestos</h1>
-            </div>
-                         
-            <form id="frmCadastre" class="hform">
-                <input type="hidden" id="txtOperacion"/>
+        <!-- Seccion de Contacto -->
+        <section id="contact" class="contactus">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="main_contact sections">
+                            <div class="head_title text-center">
+                                <h1>contactanos</h1>
+                            </div>
 
-                <label for="txtNombre"><h3>Nombre:</h3></label>
-                <input type="text" id="txtNombre" aria-label="First name">
-                           
-                <label for="txtEmail"><h3>E-mail:</h3></label>
-                <input type="text" id="txtEmail" aria-label="Last name">
+                            <div class="row">
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="single_message_right_info">
+                                            <ul>
+                                                <li><i class="fa fa-map-marker"></i> <span>Cochabamba 1320, Ciudad Autónoma de <br> Buenos Aires - Prov. Bs. As., Argentina</span></li>
 
-                <label for="txtIdea"><h3>Idea del tatuaje:</h3></label>
-                <textarea type="text" id="txtIdea" placeholder="que tienes en mente"></textarea>
+                                                <li><i class="fa fa-mobile-phone"></i> <span>+54 9 11-5623-5590</span></li>
 
-                <label for="txtLugar"><h3>Lugar del cuerpo:</h3></label>
-                <input type="text" id="txtLugar"/>
-    
-                <label for="txtTamaño"><h3>Tamaño (en cm):</h3></label>
-                <input type="text" id="txtTamaño"/>
+                                                <li><i class="fa fa-envelope-o"></i> <span>contact@cucu-studio.com</span></li>
+                                            </ul>
 
-                <label for="txtColor"><h3>Color:</h3></label>
-                <input type="text" id="txtColor"/>
-    
-                <label for="txtArtista"><h3>Artista preferido:</h3></label>
-                <select class="form-select" id="txtArtista">
-                    <option selected>Elegí con quien te gustaria realizarlo</option>
-                    <option value="Annie">Annie</option>
-                    <option value="Facundo">Facundo</option>
-                    <option value="Sofia">Sofia</option>
-                </select>
-                    
-                <div class="text-right">
-                    <button type="button" class="btn" id="btnSave" onClick="GuardarCar();">Enviar</button>
-                </div>
-            </form>
-        </div>
-    
-        <div>
-            <table id="tblList" class="table"></table>
-        </div>
-        <!-- fin de agenda -->
+                                            <div class="work_socail transition">
+                                                <a href=""><i class="fa fa-facebook img-circle"></i></a>
+                                                <a href=""><i class="fa fa-instagram img-circle"></i></a>
+                                            </div>
+                                        </div>
+                                    </div><!-- End of col-sm-6 -->
 
-        <!-- Link a tienda -->
-        <div class="container">
-            <div class="row">
-               <div class="col-sm-12 ">
-                    <div class="main_home_slider text-center">
-                        <div class="single_home_slider">
-                            <div class="home-overlay"></div>
-                                <div class="main_home wow fadeInUp"> 
-                                    <p class="subtitle">No olvides de pasar a mirar los diseños disponibles en promoción!</p>
-                                    <div class="separator"></div>
-                                    <div class="home_btn">
-                                        <a href="/tienda.html" class="btn">disponibles</a>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="single_contant_left margin-top-60">
+                                            <form action="#" id="formid">
+                                                <!--<div class="col-lg-8 col-md-8 col-sm-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">-->
+
+                                                <div class="form-group">
+                                                    <label>nombre</label>
+                                                    <input type="text" class="form-control" name="name" required="">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label>e-mail</label>
+                                                    <input type="email" class="form-control" name="email" required="">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label>tu mensaje</label>
+                                                    <textarea class="form-control" name="message" rows="8"></textarea>
+                                                </div>
+
+                                                <div class="">
+                                                    <input type="submit" value="submit" class="btn">
+                                                </div>
+                                                <!--</div>--> 
+                                            </form>
+                                        </div>
                                     </div>
-                                </div>
+
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section><!-- End of Home Section -->
-        
+                </div><!-- End of row -->
+            </div><!-- End of container -->
+        </section><!-- fin de Seccion de Contacto -->
+
         <!-- Footer  -->
         <footer id="footer" class="footer">
         <div class="container">
@@ -165,7 +162,6 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/sweetalert2.min.js"></script>
         <script src="js/carrito.js"></script>
-        <script src="js/localstorage.js"></script>
-
+        <script src="js/pedido.js"></script>
     </body>
 </html>

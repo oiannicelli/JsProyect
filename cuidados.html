@@ -37,42 +37,44 @@
     
     <body data-spy="scroll" data-target=".navbar-collapse">
         <header id="main_menu" class="header navbar-fixed-top">            
-            <div class="main_menu_bg container">
-                <nav class="navbar" id="navmenu">
-                    <!-- Marca -->
-                    <div class="col-4">
-                        <a class="navbar-brand" href="./index.html">
-                            <img width="200px" src="./assets/images/logo.png"/>
-                        </a>
-                    </div>
-                    
-                    <!-- Enlaces de navegación -->
-                    <div class="navbar col-8" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar navbar-right">
-                            <li><a href="artistas.html">artistas</a></li>
-                            <li><a href="cuidados.html">cuidados</a></li>
-                            <li><a href="tienda.html">tienda</a></li>
-                           <li><a href="agenda.html">agenda</a></li>
-                           <i class="fas fa-shopping-cart" class=" dropdown-toggle nav-item" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
-                            <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
-                                <table id="lista-carrito" class="table">
-                                   <thead>
-                                        <tr>
-                                        <th>Imagen</th>
-                                        <th>Nombre</th>
-                                        <th>Precio</th>
-                                        <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody></tbody>
-                                </table>
-                                <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
-                                <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Realizar Reserva</a>
-                           </div>
-                        </ul>                 
-                    </div>   
-                </nav>
-            </div>	
+        
+            <nav class="navbar navbar-light bg-light" id="navmenu">
+                <!-- Marca -->
+                <div class="col-4">
+                    <a class="navbar-brand" href="./index.html">
+                        <img width="200px" src="./assets/images/logo.png"/>
+                    </a>
+                </div>
+                
+                <!-- Enlaces de navegación -->
+                <div id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar">
+                        <li><a class="nav-link text-dark" href="artistas.html">artistas</a></li>
+                        <li><a class="nav-link text-dark" href="cuidados.html">cuidados</a></li>
+                        <li><a class="nav-link text-dark" href="agenda.html">agenda</a></li>
+                        <li><a class="nav-link text-dark" href="tienda.html">tienda</a></li>
+                        <li><a class="nav-link text-dark" href="contacto.html">contacto</a></li>
+
+                       <i class="fas fa-shopping-cart" class="dropdown-toggle nav-item" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                        <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                            <table id="lista-carrito" class="table">
+                               <thead>
+                                    <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block nav-link">Vaciar Carrito</a>
+                            <a href="#" id="procesar-pedido" class="btn btn-danger btn-block nav-link">Realizar Reserva</a>
+                       </div>
+                    </ul>                 
+                </div>   
+            </nav>
+        	
         </header>
 
         <!-- Service Section -->

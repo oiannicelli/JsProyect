@@ -23,6 +23,9 @@
 
         <!--Theme custom css -->
         <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/custom.css">
 
         <!--Theme Responsive css-->
         <link rel="stylesheet" href="./assets/css/responsive.css" />
@@ -38,42 +41,44 @@
 <body data-spy="scroll" data-target=".navbar-collapse">
 
     <header id="main_menu" class="header navbar-fixed-top">            
-        <div class="main_menu_bg container">
-            <nav class="navbar" id="navmenu">
-                <!-- Marca -->
-                <div class="col-4">
-                    <a class="navbar-brand" href="./index.html">
-                        <img width="200px" src="./assets/images/logo.png"/>
-                    </a>
-                </div>
-                
-                <!-- Enlaces de navegación -->
-                <div class="navbar col-8" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar navbar-right">
-                        <li><a href="artistas.html">artistas</a></li>
-                        <li><a href="cuidados.html">cuidados</a></li>
-                        <li><a href="tienda.html">tienda</a></li>
-                       <li><a href="agenda.html">agenda</a></li>
-                       <i class="fas fa-shopping-cart" class=" dropdown-toggle nav-item" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
-                        <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
-                            <table id="lista-carrito" class="table">
-                               <thead>
-                                    <tr>
-                                    <th>Imagen</th>
-                                    <th>Nombre</th>
-                                    <th>Precio</th>
-                                    <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody></tbody>
-                            </table>
-                            <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
-                            <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Realizar Reserva</a>
-                       </div>
-                    </ul>                 
-                </div>   
-            </nav>
-        </div>	
+        
+        <nav class="navbar navbar-light bg-light" id="navmenu">
+            <!-- Marca -->
+            <div class="col-4">
+                <a class="navbar-brand" href="./index.html">
+                    <img width="200px" src="./assets/images/logo.png"/>
+                </a>
+            </div>
+            
+            <!-- Enlaces de navegación -->
+            <div id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar">
+                    <li><a class="nav-link text-dark" href="artistas.html">artistas</a></li>
+                    <li><a class="nav-link text-dark" href="cuidados.html">cuidados</a></li>
+                    <li><a class="nav-link text-dark" href="agenda.html">agenda</a></li>
+                    <li><a class="nav-link text-dark" href="tienda.html">tienda</a></li>
+                    <li><a class="nav-link text-dark" href="contacto.html">contacto</a></li>
+
+                   <i class="fas fa-shopping-cart" class="dropdown-toggle nav-item" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                    <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                        <table id="lista-carrito" class="table">
+                           <thead>
+                                <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block nav-link">Vaciar Carrito</a>
+                        <a href="#" id="procesar-pedido" class="btn btn-danger btn-block nav-link">Realizar Reserva</a>
+                   </div>
+                </ul>                 
+            </div>   
+        </nav>
+        
     </header>
     
     <main>
@@ -83,8 +88,7 @@
             <p class="lead">A continuación te mostramos los tattoo disponibles en promoción.<br>Reservalo para agendar una fecha de sesión</p>
         </div>
 
-        <div class="container" id="lista-productos">
-            <!-- todos los tattoos van aqui -->
+        <div id="lista-productos" class="container">
         </div>
     </section>
     </main>
@@ -96,7 +100,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="copyright_text text-center">
-                            <p class=" wow fadeInRight" data-wow-duration="1s"><a target="_blank" href="https://www.behance.net/oiannicelli">Planearte</a>© Todos los derechos reservados</p>
+                            <p class="wow fadeInRight" data-wow-duration="1s"><a target="_blank" href="https://www.behance.net/oiannicelli">Planearte</a>© Todos los derechos reservados</p>
                         </div>
                     </div>
                 </div>
@@ -104,6 +108,8 @@
         </div><!-- End of container -->
     </footer><!-- End of footer -->
     
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/sweetalert2.min.js"></script>
