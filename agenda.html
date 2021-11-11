@@ -5,11 +5,10 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
             <title>Proyecto Ornella Iannicelli</title>
             <meta name="description" content="">
-            <meta name="viewport"
-            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+            <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         
             <!-- Style -->
-            <link rel="stylesheet" type="text/css" href="./assets/css/styleAgenda.css">
+            <link rel="stylesheet" href="./assets/css/style.css">
             <link rel="stylesheet" href="./assets/css/sweetalert2.min.css">
             <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -20,10 +19,6 @@
             <link rel="stylesheet" href="./assets/css/slider-pro.css">
             <link rel="stylesheet" href="./assets/css/stylesheet.css">
             <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
-            <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-        
-            <!--Theme custom css -->
-            <link rel="stylesheet" href="./assets/css/style.css">
         
             <!--Theme Responsive css-->
             <link rel="stylesheet" href="./assets/css/responsive.css" />
@@ -32,8 +27,7 @@
             <script src="./js/popper.min.js"></script>
         
             <!--favicon.ico-->
-	    <link rel="shortcut icon" type="image/x-icon" href="./assets/fonts/favicon.ico">
-        
+	        <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico">
         </head>
     
     <body data-spy="scroll" data-target=".navbar-collapse">
@@ -79,72 +73,121 @@
         	
         </header>
 
-        <!-- Agenda -->
-        <div class="container space-top">
-            <div class="head_title text-center">
-                <h1>presupuestos</h1>
-            </div>
-                         
-            <form id="frmCadastre" class="hform">
-                <input type="hidden" id="txtOperacion"/>
+        <main class="main__formulario">
+            
+            <h1 class="formulario__titulo head_title">Qué debes saber antes de pedir presupuesto</h1>
 
-                <label for="txtNombre"><h3>Nombre:</h3></label>
-                <input type="text" id="txtNombre" aria-label="First name">
-                           
-                <label for="txtEmail"><h3>E-mail:</h3></label>
-                <input type="text" id="txtEmail" aria-label="Last name">
-
-                <label for="txtIdea"><h3>Idea del tatuaje:</h3></label>
-                <textarea type="text" id="txtIdea" placeholder="que tienes en mente"></textarea>
-
-                <label for="txtLugar"><h3>Lugar del cuerpo:</h3></label>
-                <input type="text" id="txtLugar"/>
-    
-                <label for="txtTamaño"><h3>Tamaño (en cm):</h3></label>
-                <input type="text" id="txtTamaño"/>
-
-                <label for="txtColor"><h3>Color:</h3></label>
-                <input type="text" id="txtColor"/>
-    
-                <label for="txtArtista"><h3>Artista preferido:</h3></label>
-                <select class="form-select" id="txtArtista">
-                    <option selected>Elegí con quien te gustaria realizarlo</option>
-                    <option value="Annie">Annie</option>
-                    <option value="Facundo">Facundo</option>
-                    <option value="Sofia">Sofia</option>
-                </select>
-                    
-                <div class="text-right">
-                    <button type="button" class="btn" id="btnSave" onClick="GuardarCar();">Enviar</button>
-                </div>
-            </form>
-        </div>
-    
-        <div>
-            <table id="tblList" class="table"></table>
-        </div>
-        <!-- fin de agenda -->
-
-        <!-- Link a tienda -->
-        <div class="container">
+            <div class="container">
             <div class="row">
-               <div class="col-sm-12 ">
-                    <div class="main_home_slider text-center">
-                        <div class="single_home_slider">
-                            <div class="home-overlay"></div>
-                                <div class="main_home wow fadeInUp"> 
-                                    <p class="subtitle">No olvides de pasar a mirar los diseños disponibles en promoción!</p>
-                                    <div class="separator"></div>
-                                    <div class="home_btn">
-                                        <a href="/tienda.html" class="btn">disponibles</a>
+            <!-- Info para pedir presupuesto --> 
+            <section class="row col-sm-12 col-md-6">
+
+                <!-- 1 -->
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                    Lo primero que debes hacer es leer nuestras preguntas frecuentes, ya que es muy probable que la mayoría de tus dudas ya hayan sido respondidas.
+                </p>
+                 
+                <!-- 2 -->       
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                    Tenemos un formulario que debes completar para solicitar un presupuesto. Responde todo de la mejor manera posible, ya que esa es la información que usaremos para darte un presupuesto y programar la cita!
+                </p>        
+                 
+                <!-- 3 -->
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                    El tamaño tiene que ser correcto, por lo que sugerimos usar una regla para medirte. Puedes elegir el artista que prefieras, o podemos sugerirte alguno. En este caso, revisaremos tu solicitud y te diremos qué artista es el mejor para el proyecto.
+                </p> 
+                     
+                <!-- 4 -->
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                    También pedimos agregar archivos con referencias. Ten en cuenta que no hacemos copias de otros tatuajes! Nuestras obras son todas originales y únicas. Después de completar y enviar el formulario de solicitud, te estaremos respondiendo por correo entre 3-5 días hábiles para informarte si tu solicitud ha sido aceptada.
+                </p>
+                  
+                <!-- 5 -->
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                    Por favor si no recibiste respuesta pasados esos días revisa tu carpeta de Spam y si aún no encuentras una respuesta nuestra, reenviamos tu solicitud!
+                </p>
+                  
+                <!-- 6 -->
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                    Te daremos un precio estimado, y una fecha. Si la fecha sugerida no funciona para usted, avísenos e intentaremos encontrar otra opción que se ajuste a su calendario.
+                </p>
+                
+            </section>
+                
+            <!-- Formulario de agenda -->
+            <section class="row col-sm-12 col-md-6">
+                <form id="frmCadastre" class="formulario" action="">
+        
+                    <input type="text" class="formulario__input">
+                    <label for="txtNombre" class="formulario__label">Nombre</label>
+        
+                    <input type="text" class="formulario__input">
+                    <label class="formulario__label">E-mail</label>
+        
+                    <textarea type="text" class="formulario__textarea"></textarea>
+                    <label class="formulario__label">Idea del tatuaje</label>
+        
+                    <input type="text" class="formulario__input">
+                    <label class="formulario__label">Lugar del cuerpo</label>
+        
+                    <input type="text" class="formulario__input">
+                    <label class="formulario__label">Tamaño (en cm)</label>
+
+                    <select class="form-select formulario__input">
+                        <option selected>Color</option>
+                        <option>Full color</option>
+                        <option>Blanco y Negro</option>
+                    </select>
+        
+                    <select class="form-select formulario__input">
+                        <option selected>Elegí con quien te gustaria realizarlo</option>
+                        <option value="Annie">Annie</option>
+                        <option value="Facundo">Facundo</option>
+                        <option value="Sofia">Sofia</option>
+                    </select>
+        
+                    <input type="submit" class="formulario__submit">
+                </form>
+            </section>
+            </div>
+        </div>
+            <!-- Link a tienda -->
+            <article class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="main_home_slider text-center">
+                            <div class="single_home_slider">
+                                <div class="home-overlay"></div>
+                                    <div class="main_home wow fadeInUp"> 
+                                        <p class="subtitle">No olvides de pasar a mirar los diseños disponibles en promoción!</p>
+                                        <div class="separator"></div>
+                                        <div class="home_btn"><a href="/tienda.html" class="btn">disponibles</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section><!-- End of Home Section -->
+            </article>
+        </main>
         
         <!-- Footer  -->
         <footer id="footer" class="footer">
@@ -159,13 +202,14 @@
                 </div>
             </div>
         </div><!-- End of container -->
-        </footer><!-- fin de footer -->
+        </footer>
+        <!-- fin de footer -->
 
         <script src="js/jquery-3.4.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/sweetalert2.min.js"></script>
         <script src="js/carrito.js"></script>
-        <script src="js/localstorage.js"></script>
+        <script src="js/agenda.js"></script>
 
     </body>
 </html>

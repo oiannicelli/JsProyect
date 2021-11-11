@@ -1,10 +1,10 @@
 html,
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0); !important
     font-size: 18px;
-    color: #000000;
     width: 100%;
     padding: 0;
+    margin: 0;
     margin-left: 0;
     margin-right: 0;
     font-family: 'montserratlight';
@@ -70,7 +70,6 @@ a span {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    /*    direction: rtl;*/
 }
 p {
     margin: 0 0 15px;
@@ -206,9 +205,7 @@ p:last-child {
 }
 
 
-/*
-Section
-*/
+/* Section */
 .sections {
     padding-top:85px;
     padding-bottom: 105px;
@@ -282,9 +279,8 @@ ul{
 .fluid-blocks-col-right {
     padding: 70px 80px 0 40px;
 }
-/*
-Separator
-*/
+
+/* Separator */
 .separator {
     height: 2px;
     width: 60px;
@@ -309,12 +305,8 @@ Separator
     margin:20px 0px;
     background: rgb(255, 0, 212);
 }
-/*section:nth-of-type(odd) {
-    background-color: #F9F9F9;
-}*/
-/*
-Button
-*/
+
+/* Button */
 .btn-primary.active.focus,
 .btn-primary.active:focus,
 .btn-primary.active:hover,
@@ -367,9 +359,7 @@ Button
     border-color:#000;
 }
 
-/*
-Extra height css
-*/
+/* Extra height css */
 .margin-top-20 {
     margin-top: 20px;
 }
@@ -453,19 +443,7 @@ input::-ms-input-placeholder {
     color: #000000;
 }
 
-/*for image bg*/
 
-
-/*.img-bg{
-  background: url(../images/home-msg.jpg) no-repeat center top fixed;
-  background-size
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 100%;
-  overflow: hidden;
-}*/
 /* navbar section */
 .menu-scroll {
     padding-top: 0px;
@@ -482,11 +460,6 @@ input::-ms-input-placeholder {
     -moz-transition:all .3s;
     transition:all .3s;
     height: 80px;
-    /*    background-color: transparent;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;*/
-
 }
 
 .menu-scroll .main_menu_bg{
@@ -540,9 +513,7 @@ input::-ms-input-placeholder {
 .dropdown-menu>li>a{
     line-height: 4;
 }
-/*.navbar-nav>li>.dropdown-menu{
-    margin-top:20px;
-}*/
+
 
 
 /*home section*/
@@ -856,18 +827,6 @@ service section css
 }
 
 
-/*======================================================================
-                    instagram Section
--=======================================================================*/
-.instagram-thumbnails img{
-    width: 18%;
-    display: inline-block;
-    margin: 5px;
-}
-
-
-
-
 
 
 /*========================================================================
@@ -897,9 +856,6 @@ service section css
 .main_events_area .single_events.events_btn .btn{
     margin-top:0px;
 }
-
-
-
 
 
 /*=====================================================================
@@ -1059,4 +1015,72 @@ ul li.filter{
 .ourmap {
     width: 100%;
     height: 700px;
+}
+
+/*=======================================================================
+                    AGENDA ESTILO 
+=========================================================================*/
+
+.main__formulario, main {
+    background: black;
+}
+.formulario {
+	width: 500px;
+	max-width: 100%;
+	padding: 0px 0px 0px 80px;
+	position: relative;
+    color: rgb(255, 0, 212); 
+}
+.formulario, p{
+    padding: 0px 0px 0px 80px;
+}
+.formulario__titulo {
+	text-align: center;
+	margin-top: 80px;
+	color: rgb(19, 228, 235);
+}
+
+.formulario__input, .formulario__label, .formulario__submi, .formulario__textarea {
+	display: block;
+	width: 100%;
+	font-size: 16px;
+}
+.formulario__input {
+	padding: 15px;
+	font-size: 18px;
+    color: rgb(255, 0, 212); 
+	border: 3px solid rgb(255, 0, 212);
+	margin-bottom: 40px;
+}
+.formulario__input:focus + .formulario__label {
+	margin-top: -135px;
+	color: rgb(255, 0, 212); 
+}
+.formulario__label {
+	padding-left: 15px;
+	position: absolute;
+	margin-top: -85px;
+	transition: all 0.2s;
+}
+.formulario__textarea:focus + .formulario__label {
+	margin-top: -160px;
+	color: rgb(255, 0, 212); 
+}
+.formulario__textarea {
+	padding: 15px;
+	font-size: 18px;
+    color: rgb(255, 0, 212); 
+	border: 3px solid rgb(255, 0, 212);
+	margin-bottom: 40px;
+}
+.formulario__submit {
+	background: rgb(255, 0, 212);
+	padding: 10px 20px;
+	cursor: pointer;
+	border: none;
+    color: white;
+}
+.fijar {
+    margin-top: -135px;
+    color: white;
 }
