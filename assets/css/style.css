@@ -2,6 +2,39 @@
 @keyframes fade-in-left{0%{transform:translateX(-50px);opacity:0}100%{transform:translateX(0);opacity:1}}
 @keyframes fade-in{0%{opacity:0}100%{opacity:1}}
 
+ @-webkit-keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+  
+  
+
+
+
+
+
 html,
 body {
     background-color: rgb(0, 0, 0); !important
@@ -189,7 +222,10 @@ h6 {
 .over-color:hover, .over-color:focus {
     color: rgb(255, 0, 212);
 }
-  
+.h1-blur {
+    -webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+} 
   a{
     color: white;
     text-decoration: none;

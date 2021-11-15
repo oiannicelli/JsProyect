@@ -1,6 +1,6 @@
 const carro = new Carrito();
-let carrito = document.getElementById("carrito");
-let productos = document.getElementById("lista-productos");
+const carrito = document.getElementById("carrito");
+const productos = document.getElementById("lista-productos");
 const listaProductos = document.querySelector("#lista-carrito tbody");
 const vaciarCarritoBtn = document.getElementById("vaciar-carrito");
 const procesarPedidoBtn = document.getElementById("procesar-pedido");
@@ -41,9 +41,9 @@ async function fetchProductos() {
 	let html = "";
 	data.forEach((producto, index) => {
 		curr = `
-		<div class="card mb-2 shadow-sm ">
-				<div class="colorsbg">
-					<h3 class="my-0 font-weight-bold">${producto.marca}</h3>
+		<div class="card mb-4 shadow-sm ">
+				<div class="card-header">
+					<h4 class="my-0 font-weight-bold">${producto.marca}</h4>
 				</div>
 				<div class="card-body">
 					<img src=${producto.imagen} class="card-img-top" alt=${producto.marca}>
@@ -51,7 +51,7 @@ async function fetchProductos() {
 						producto.precio
 					}</span></h1>
 
-					<ul class="list-unstyled mt-6 mb-6">
+					<ul class="list-unstyled mt-3 mb-4">
 					${producto.detalles
 						.map(
 							(ele) => `
@@ -60,7 +60,7 @@ async function fetchProductos() {
 						)
 						.join("")}
 					</ul>
-					<a href="" class="btn btn-block agregar-carrito" data-id=${producto.id}>Reservar</a>
+					<a href="" class="btn btn-block btn-primary agregar-carrito" data-id=${producto.id}>Reservar</a>
 				</div>
 			</div>
 		`
