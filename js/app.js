@@ -1,6 +1,8 @@
 // 3° Leer todos los ID del tienda.html y carrito.html
 const cards = document.getElementById('cards')
+// elementos del carrrito:
 const items = document.getElementById('items')
+// elementos del footer del carrito:
 const footer = document.getElementById('footer2')
 const templateCard = document.getElementById('template-card').content
 const templateFooter = document.getElementById('template-footer').content
@@ -19,6 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// llamamos a la constante del JSON declarada abajo
 	fetchData()
+
+	// Declaro el Local Storage para almacenar los datos en el carrito
+	if (localStorage.getItem('carrito')) {
+		carrito = JSON.parse(localStorage.getItem('carrito'))
+		mostrarCarrito()
+	}
 })
 
 //////////////////////////////////////////////////////////////
@@ -28,6 +36,15 @@ cards.addEventListener('click', e => {
 
 	// Funcion agregar al carrito (punto 7°)
 	addCarrito(e) 
+})
+
+//////////////////////////////////////////////////////////////
+
+// 12° BOTONES DE ACCIONES en el carrito
+items.addEventListener('click', e => {
+
+	// Funcion para aumentar y disminuir productos del carrito
+	btnAccion(e) 
 })
 
 //////////////////////////////////////////////////////////////
@@ -89,13 +106,13 @@ const addCarrito = e => {
 //////////////////////////////////////////////////////////////
 
 // 9° CARRITO Declaro la funcion que recibe el objeto con todos los datos al carrito
-const setCarrito = objeto => {
+const setCarrito = item => {
 
-	// Declaro el objeto con todos los datos
+	// Declaro el OBJETO con todos los datos *
 	const producto = {
-		id: objeto.querySelector('.btn').dataset.id,
-		titulo: objeto.querySelector('h3').textContent,
-		precio: objeto.querySelector('h6').textContent,
+		id: item.querySelector('.btn').dataset.id,
+		titulo: item.querySelector('h6').textContent,
+		precio: item.querySelector('h3').textContent,
 		cantidad: 1
 	}
 
@@ -114,23 +131,25 @@ const setCarrito = objeto => {
 
 //////////////////////////////////////////////////////////////
 
-// 10° Declaro una funcion para mostrar el carrito (similar a punto 4)
+// 10° Declaro una funcion para mostrar el carrito (similar a punto 4) - SE EJECUTA CUANDO AGREGO ELEMENTOS EN EL PUNTO 9
 const mostrarCarrito = () => {
 
 	// Reinicio el carrito para que no se sobreescriba la info
 	items.innerHTML = ''
 
-	// Declaro la coleccion de objetos:
+	// Declaro la coleccion de objetos en un ciclo forEach:
 	Object.values(carrito).forEach(producto => {
 
-		// Accedemos a la estructura del HTML y agregamos los datos de cada producto
+		// Accedemos a la estructura del HTML y agregamos los datos de cada producto creados en el OBJETO del punto 9*
 		templateCarrito.querySelector('th').textContent = producto.id
-		templateCarrito.querySelectorAll('td')[1].textContent = producto.titulo
-		templateCarrito.querySelectorAll('td')[0].textContent = producto.cantidad
-		templateCarrito.querySelector('.btn-info').dataset.id = producto.id
-		templateCarrito.querySelector('.btn').dataset.id = producto.id
-		templateCarrito.querySelector('span').textContent = producto.cantidad * producto.precio
+		templateCarrito.querySelectorAll('td')[0].textContent = producto.titulo
+		templateCarrito.querySelectorAll('td')[1].textContent = producto.cantidad
+		templateCarrito.querySelector('span').textContent = producto.precio * producto.cantidad
 
+		// botones:
+		templateCarrito.querySelector('.btn-info').dataset.id = producto.id
+		templateCarrito.querySelector('.btn-danger').dataset.id = producto.id
+		
 		// Clonar ???
 		const clone = templateCarrito.cloneNode(true)
 		fragment.appendChild(clone)
@@ -141,6 +160,9 @@ const mostrarCarrito = () => {
 
 	// Mostrar la info del footer
 	mostrarFooter()
+
+	// Guardar la informacion en el Local Storage
+	localStorage.setItem('carrito', JSON.stringify(carrito))
 }
 
 //////////////////////////////////////////////////////////////
@@ -156,6 +178,7 @@ const mostrarFooter = () => {
 		footer.innerHTML =  `
 		<th scope="row" colspan="5" class="color-text5">Carrito vacío - comience a reservar!</th>
 		`
+		return
 	}
 
 	// Agrego otro condicional - cuando sumo productos al carrito:
@@ -166,7 +189,7 @@ const mostrarFooter = () => {
 
 	// tercero muestro la info de los condicionales en el footer:
 	templateFooter.querySelectorAll('td')[0].textContent = nCantidad
-	templateFooter.querySelectorAll('span')[0].textContent = nPrecio
+	templateFooter.querySelector('span').textContent = nPrecio
 
 	// Clonar ???
 	const clone = templateFooter.cloneNode(true)
@@ -174,4 +197,38 @@ const mostrarFooter = () => {
 
 	// Muestro la info del fragment
 	footer.appendChild(fragment)
+
+	// Boton para vaciar el carrito
+	const btnVaciar = document.getElementById('vaciarCarrito')
+    btnVaciar.addEventListener('click', () => {
+        carrito = {}
+        mostrarCarrito()
+    })
+}
+
+//////////////////////////////////////////////////////////////
+
+// 13° Declaro las funciones para agregar y disminuir productos:
+const btnAccion = e => {
+    
+	// para aumentar:
+    if (e.target.classList.contains('btn-info')) {
+        const producto = carrito[e.target.dataset.id]
+        producto.cantidad = carrito[e.target.dataset.id].cantidad + 1
+        carrito[e.target.dataset.id] = { ...producto }
+        mostrarCarrito()
+    }
+
+	// para disminuir:
+    if (e.target.classList.contains('btn-danger')) {
+        const producto = carrito[e.target.dataset.id]
+        producto.cantidad--
+        if (producto.cantidad === 0) {
+            delete carrito[e.target.dataset.id]
+        }
+        mostrarCarrito()
+    }
+
+	// ????
+    e.stopPropagation()
 }

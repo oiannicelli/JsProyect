@@ -4,55 +4,55 @@
 		"imagen": "assets/images/bumeran.jpg",
 		"titulo": "KARMA por Annie",
 		"tamaño": "5cm x 6 cm aprox.",
-		"precio": "3.000"
+		"precio": "3000"
 	},
 	{
 		"id": 2,
 		"imagen": "assets/images/golondrina.jpg",
 		"titulo": "GOLONDRINAS por Facu",
 		"tamaño": "25cm x 25cm aprox.",
-		"precio": "18.000"
+		"precio": "18000"
 	},
 	{
 		"id": 3,
 		"imagen": "assets/images/serpiente.jpg",
 		"titulo": "SNAKE por Sofi",
 		"tamaño": "10cm x 15cm aprox.",
-		"precio": "8.000"
+		"precio": "8000"
 	},
 	{
 		"id": 4,
 		"imagen": "assets/images/gato.png",
 		"titulo": "FAT CAT por Sofi",
 		"tamaño": "15cm x 20cm aprox.",
-		"precio": "10.000"
+		"precio": "10000"
 	},
 	{
 		"id": 5,
 		"imagen": "assets/images/mariposa.jpg",
 		"titulo": "BUTTERFLY por Annie",
 		"tamaño": "10cm x 10cm aprox.",
-		"precio": "12.000"
+		"precio": "12000"
 	},
 	{
 		"id": 6,
 		"imagen": "assets/images/pantera.jpg",
 		"titulo": "PANTERA por Facu",
 		"tamaño": "15cm x 20cm aprox.",
-		"precio": "15.000"
+		"precio": "15000"
 	},
 	{
 		"id": 7,
 		"imagen": "assets/images/mariposa.jpg",
 		"titulo": "BUTTERFLY por Annie",
 		"tamaño": "10cm x 10cm aprox.",
-		"precio": "12.000"
+		"precio": "12000"
 	},
 	{
 		"id": 8,
 		"imagen": "assets/images/pantera.jpg",
 		"titulo": "PANTERA por Facu",
 		"tamaño": "15cm x 20cm aprox.",
-		"precio": "15.000"
+		"precio": "15000"
 	}
 ]
