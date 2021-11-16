@@ -183,6 +183,38 @@ h6 {
     margin: 0;
     color:#ffffff;
 }
+
+
+
+/* TEXTO PARA TIENDA Y CARRITO */
+
+.color-text1 {
+    color: black;
+    font-size: 16px;
+    font-family: 'montserratbold';
+}
+.color-text2 {
+    color: black;
+    font-size: 14px;
+}
+.color-text3 {
+    color: rgb(19, 228, 235);
+    font-size: 24px;
+    font-family: 'montserratbold';
+}
+.color-text4 {
+    color: rgb(19, 228, 235);
+    font-size: 16px;
+    font-family: 'montserratbold';
+}
+.color-text5 {
+    color: rgb(255, 0, 212);
+    font-size: 16px;
+    font-family: 'montserratbold';
+}
+
+
+
 h4,
 h5 {
     font-weight: 300;
@@ -1164,4 +1196,12 @@ ul li.filter{
 .fijar {
     margin-top: -135px;
     color: white;
+}
+
+/*=======================================================================
+                    Listado de productos 
+=========================================================================*/
+
+.card img{
+    width: 20em;
 }
