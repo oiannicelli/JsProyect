@@ -23,7 +23,7 @@
 	{
 		"id": 4,
 		"imagen": "assets/images/gato.png",
-		"titulo": "FAT CAT por Sofi",
+		"titulo": "666 CAT por Annie",
 		"tamaño": "15cm x 20cm aprox.",
 		"precio": "10000"
 	},
@@ -43,15 +43,15 @@
 	},
 	{
 		"id": 7,
-		"imagen": "assets/images/mariposa.jpg",
-		"titulo": "BUTTERFLY por Annie",
+		"imagen": "assets/images/inside.png",
+		"titulo": "INSIDE por Sofi",
 		"tamaño": "10cm x 10cm aprox.",
-		"precio": "12000"
+		"precio": "10000"
 	},
 	{
 		"id": 8,
-		"imagen": "assets/images/pantera.jpg",
-		"titulo": "PANTERA por Facu",
+		"imagen": "assets/images/screaming.jpg",
+		"titulo": "SCREAMING por Facu",
 		"tamaño": "15cm x 20cm aprox.",
 		"precio": "15000"
 	}

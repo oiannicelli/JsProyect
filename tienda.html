@@ -49,25 +49,27 @@
                     <li><a class="a nav-link text-dark" href="artistas.html">artistas</a></li>
                     <li><a class="a nav-link text-dark" href="cuidados.html">cuidados</a></li>
                     <li><a class="a nav-link text-dark" href="agenda.html">agenda</a></li>
-                    <li><a class="a nav-link text-dark" href="tienda.html">tienda</a></li>
                     <li><a class="a nav-link text-dark" href="contacto.html">contacto</a></li>
-
-                   <i class="fas fa-shopping-cart" class="dropdown-toggle nav-item" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
-                    <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
-                        <table id="lista-carrito" class="table">
-                           <thead>
-                                <tr>
-                                <th>Imagen</th>
-                                <th>Nombre</th>
-                                <th>Precio</th>
-                                <th></th>
-                                </tr>
-                            </thead>
-                            <tbody></tbody>
-                        </table>
-                        <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block nav-link">Vaciar Carrito</a>
-                        <a href="#" id="procesar-pedido" class="btn btn-danger btn-block nav-link">Realizar Reserva</a>
-                   </div>
+                    <li><a class="a nav-link text-dark" href="tienda.html">tienda</a></li>
+                    <li><a class="text-dark" href="carrito.html">
+                            <i class="fas fa-shopping-cart" class="dropdown-toggle nav-item" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                            <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                <table id="lista-carrito" class="table">
+                                    <thead>
+                                        <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                                <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block nav-link">Vaciar Carrito</a>
+                                <a href="#" id="procesar-pedido" class="btn btn-danger btn-block nav-link">Realizar Reserva</a>
+                            </div>
+                        </a>
+                    </li>
                 </ul>                 
             </div>   
         </nav>
@@ -75,10 +77,10 @@
     </header>
     
     <main>
-
         <!-- DISPONIBLES -->
         <div class="container margin-top-80">
-            <h1 class="h1-blur">disponibles.</h1>
+            <h3 class="h1-blur">diseños</h3>
+            <h2 class="h1-blur">disponibles.</h2>
             <div class="separator2"></div>
             <p>A continuación te mostramos los tattoo disponibles en promoción.<br>Reserva para agendar una fecha de sesión!</p>
 
@@ -104,6 +106,7 @@
 
         <!-- CARRITO -->
         <div class="container margin-top-80">
+
             <h1 class="h1-blur">carrito.</h1>
             <div class="separator2"></div>
             
@@ -123,7 +126,7 @@
                 <tbody id="items"></tbody>
                 <tfoot>
                   <tr id="footer2">
-                    <th scope="row" colspan="5" class="color-text5">Carrito vacío - comience a reservar!</th>
+                    <th scope="row" colspan="5" class="color-text5">Carrito vacío - hace tu reserva!</th>
                   </tr>
                 </tfoot>
             </table>
@@ -149,14 +152,14 @@
   
             <!-- Informacion los elementos del carrito en el footer -->
             <template id="template-footer">
-          <th scope="row" colspan="2" class="color-text6">Total productos</th>
-          <td class="color-text6">10</td>
-            <td>
-              <button class="btn-sm" id="vaciarCarrito">
-                  vaciar carrito
-              </button>
-            </td>
-            <td class="font-weight-bold color-text5">$ <span>5000</span></td>
+                <th scope="row" colspan="2" class="color-text6">Total productos</th>
+                <td class="color-text6">10</td>
+                    <td>
+                    <button class="btn-sm" id="vaciarCarrito">
+                        vaciar carrito
+                    </button>
+                    </td>
+                <td class="font-weight-bold color-text5">$ <span>5000</span></td>
             </template>
 
             <div id="cards" class="container">
@@ -181,5 +184,6 @@
     </footer><!-- End of footer -->
     
     <script src="./js/app.js"></script>
+    <script src="./js/carrito.js"></script>
 </body>
 </html>

@@ -8,6 +8,9 @@ const templateCard = document.getElementById('template-card').content
 const templateFooter = document.getElementById('template-footer').content
 const templateCarrito = document.getElementById('template-carrito').content
 
+
+
+
 // 5° ??
 const fragment = document.createDocumentFragment()
 
@@ -176,7 +179,7 @@ const mostrarFooter = () => {
 	// Agrego los condicionales - cuando se vacia el carrito se muestra esta info:
 	if (Object.keys(carrito).length === 0) {
 		footer.innerHTML =  `
-		<th scope="row" colspan="5" class="color-text5">Carrito vacío - comience a reservar!</th>
+		<th scope="row" colspan="5" class="color-text5">Carrito vacío - hace tu reserva!</th>
 		`
 		return
 	}
