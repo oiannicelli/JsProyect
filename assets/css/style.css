@@ -457,6 +457,28 @@ ul{
     text-decoration: none;
     border:1px solid rgb(255, 0, 212);
 }
+
+.btn1 {
+    display: inline-block;
+    min-width: 120px;
+    height: 30px;
+    text-align: center;
+    color: black;
+    letter-spacing: 1px;
+    font-size: 14px;
+    border-radius: 40px;
+    margin-bottom: 10px;
+    background-color: white;
+    transition: .5s; 
+    border:1px solid rgb(255, 0, 212);
+}
+.btn1:hover {
+    background-color:rgb(255, 0, 212);
+    color:#fff;
+    text-decoration: none;
+    border:1px solid rgb(255, 0, 212);
+}
+
 .btn-default {
     color: #333;
     background-color: #fff;

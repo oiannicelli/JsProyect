@@ -1,12 +1,14 @@
 /* --- VALIDACION DE INFORMACION EN FORMULARIO PARA ENVIO DE DATOS ------- */
 
 // Seleccionar todos los elementos del formulario para validarlos y los guardo en un array:
-const inputs = document.getElementsByClassName('formulario__input');
+const inputs = document.getElementById('frmCadastre');
+
 
 // Recorro el array de acuerdo a la cantidad de elementos que hay:
 for (let i = 0; i < inputs.length; i++) {
 
 	// Escuchar el evento cuando el usuario termina de escribir en la celda:
+
 	inputs[i].addEventListener('keyup', function() {
 
 		// Si el valor del elemento input es mayor a 1 se realiza la siguiente funcion:
@@ -22,3 +24,15 @@ for (let i = 0; i < inputs.length; i++) {
 		}
 	});
 }
+
+
+	
+
+inputs.addEventListener('submit', function(event){
+	alert("Su presupuesto se envio correctamente!");
+	event.preventDefault();
+});
+
+
+  
+  

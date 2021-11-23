@@ -1,4 +1,4 @@
-// 3° Leer todos los ID del tienda.html y carrito.html
+// 3° Leer todos los ID del tienda.html y carrito.html:
 const cards = document.getElementById('cards')
 // elementos del carrrito:
 const items = document.getElementById('items')
@@ -9,9 +9,7 @@ const templateFooter = document.getElementById('template-footer').content
 const templateCarrito = document.getElementById('template-carrito').content
 
 
-
-
-// 5° ??
+// 5° NN
 const fragment = document.createDocumentFragment()
 
 // 8° Declaro la COLECCION DE OBJETOS para el carrito
@@ -66,7 +64,6 @@ const fetchData = async () => {
 		mostrarProductos(data)
 	}
 	catch (error) {
-		
 	}
 }
 
@@ -83,7 +80,7 @@ const mostrarProductos = data => {
 		templateCard.querySelector('h3').textContent = producto.precio
 		templateCard.querySelector('.btn').dataset.id = producto.id
 
-		// ???
+		// NN
 		const clone = templateCard.cloneNode(true)
 		fragment.appendChild(clone)
 	})
@@ -153,7 +150,7 @@ const mostrarCarrito = () => {
 		templateCarrito.querySelector('.btn-info').dataset.id = producto.id
 		templateCarrito.querySelector('.btn-danger').dataset.id = producto.id
 		
-		// Clonar ???
+		// Clonar NN
 		const clone = templateCarrito.cloneNode(true)
 		fragment.appendChild(clone)
 	})
@@ -194,7 +191,7 @@ const mostrarFooter = () => {
 	templateFooter.querySelectorAll('td')[0].textContent = nCantidad
 	templateFooter.querySelector('span').textContent = nPrecio
 
-	// Clonar ???
+	// Clonar NN
 	const clone = templateFooter.cloneNode(true)
 	fragment.appendChild(clone)
 
@@ -207,6 +204,13 @@ const mostrarFooter = () => {
         carrito = {}
         mostrarCarrito()
     })
+
+	// Boton para mostrar mensaje de carrito comprado
+	const btnComprar = document.getElementById('comprarCarrito')
+	btnComprar.addEventListener('click', () => {
+		carrito = {}
+		alert("Su carrito se reservo por exito!")
+	})
 }
 
 //////////////////////////////////////////////////////////////
@@ -232,6 +236,6 @@ const btnAccion = e => {
         mostrarCarrito()
     }
 
-	// ????
+	// Detiene cualquier otro evento del contenedor padre
     e.stopPropagation()
 }
